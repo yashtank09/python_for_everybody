@@ -1,0 +1,20 @@
+Python 3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> name = input('Enter:')
+Enter:Chuck
+>>> print(name)
+Chuck
+>>> apple = input('Enter:')
+Enter:1000
+>>> x = apple - 10
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+>>> x = int(apple) - 100
+>>> print(x)
+900
+>>> clear()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'clear' is not defined
+>>>

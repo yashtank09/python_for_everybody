@@ -1,0 +1,160 @@
+PS C:\Users\Yash> python
+Python 3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.>>> fruit = 'banana'
+>>> index = 0
+>>> while index < len(fruit):
+...     x = fruit[index]
+...     print(index, x)
+...     index += 1
+...
+0 b
+1 a
+2 n
+3 a
+4 n
+5 a
+>>> for i in fruit:
+...     print(i)
+...
+b
+a
+n
+a
+n
+a
+>>> index = 0
+>>> for i, index in fruit:
+...     print(index += 1, i)
+  File "<stdin>", line 2
+    print(index += 1, i)
+                ^
+SyntaxError: invalid syntax
+>>> for i, index in fruit:
+...     index += 1
+...     print(index, i)
+...
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: not enough values to unpack (expected 2, got 1)
+>>> word = 'banana'
+>>> courn = 0
+>>> for l in word:
+...     if l == 'a':
+...             count +=1
+...
+Traceback (most recent call last):
+  File "<stdin>", line 3, in <module>
+NameError: name 'count' is not defined
+>>> for l in word:
+...     if l == 'a':
+...             courn += 1
+... print(courn)
+  File "<stdin>", line 4
+    print(courn)
+    ^
+SyntaxError: invalid syntax
+>>> print(courn)
+0
+>>> for l in word:
+...     if l == 'a':
+...             count +=1
+...
+Traceback (most recent call last):
+  File "<stdin>", line 3, in <module>
+NameError: name 'count' is not defined
+>>> for l in word:
+...     if l == 'a':
+...             courn += 1
+...
+>>> print(courn)
+3
+>>> s = "monty python"
+>>> print(s[0:4])
+mont
+>>> print(s[2:7])
+nty p
+>>> print(s[:7])
+monty p
+>>> print(s[5:])
+ python
+>>> print(s[6:100])
+python
+>>> print(s[:])
+monty python
+>>> f = 'banana'
+>>> 'n' in f
+True
+>>> 'a' in f
+True
+>>> 's' in f
+False
+>>> if 'a' i f:
+  File "<stdin>", line 1
+    if 'a' i f:
+           ^
+SyntaxError: invalid syntax
+>>> if a in f:
+...     print('Yaaa! Found it!)
+  File "<stdin>", line 2
+    print('Yaaa! Found it!)
+                           ^
+SyntaxError: EOL while scanning string literal
+>>> if a in f:
+...     print('Yaaa! Found it!')
+...
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'a' is not defined
+>>> if 'a' in f:
+...     print('Yaaa! Found it!')
+...
+Yaaa! Found it!
+>>> greet = 'HELLO Bob'
+>>> zap = greet.lower()
+>>> print(zap)
+hello bob
+>>> print(greet)
+HELLO Bob
+>>> print('hi THERE'.lower())
+hi there
+>>> stuff = 'Hello World'
+>>> type(stuff)
+<class 'str'>
+>>> dir(stuff)
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'removeprefix', 'removesuffix', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+>>> fruit = 'banana'
+>>> pos = fruit.find('n')
+>>> print(pos)
+2
+>>> pos = fruit.find('na')
+>>> print(pos)
+2
+>>> greet = 'hello bob'
+>>> n = greet.replace('bob', 'jane')
+>>> print(n)
+hello jane
+>>> n = greet.replace('o', 'x')
+>>> print(n)
+hellx bxb
+>>> line = 'Please have a nice day'
+>>> line.startswith('Please')
+True
+>>> line.startswith('P')
+True
+>>> line.startswith('p')
+False
+>>> data = 'From stephen.marquard@uct.ac.za Sat Jan 5 09:14:16 2008'
+>>> atpos = data.find('@')
+>>> print(atops)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'atops' is not defined
+>>> print(atpos)
+21
+>>> sppos = data.find(' ', atpos)
+>>> print(sppos)
+31
+>>> host = data[atpos+1:sppos]
+>>> print(host)
+uct.ac.za
+>>>

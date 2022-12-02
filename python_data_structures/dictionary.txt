@@ -1,0 +1,49 @@
+Python 3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> j = {'chuck':1, 'fred': 42, 'jan':100}
+>>> print(j)
+{'chuck': 1, 'fred': 42, 'jan': 100}
+>>> o = {}
+>>> print(type(o))
+<class 'dict'>
+>>> c = dict()
+>>> c['csev'] = 1
+>>> c['cwen'] = 1
+>>> print(c)
+{'csev': 1, 'cwen': 1}
+>>> c['cwen'] = c['cwen'] + 1
+>>> print(c)
+{'csev': 1, 'cwen': 2}
+>>> 'ssvd' in c
+False
+>>> 'ssvd' in c
+    'cseve' in c
+False
+>>> 'csev' in c
+True
+>>> counts = dict()
+>>> names = ['yash', 'jay', 'mohit', 'yash', 'mohit', 'aastik', 'akash', 'yash', 'mohit', 'jay', 'aastik']
+>>> for name in names:
+...     if name not in counts:
+...             counts[name] = 1
+...     else:
+...             counts[name] = counts[name] + 1
+...
+>>> print(counts)
+{'yash': 3, 'jay': 2, 'mohit': 3, 'aastik': 2, 'akash': 1}
+>>> x = counts.get(name, 0)
+>>> x
+2
+>>> for name in names:
+...     counts[name] = counts.get(name, 0) + 1
+... print(counts)
+  File "<stdin>", line 3
+    print(counts)
+    ^
+SyntaxError: invalid syntax
+>>> for name in names:
+...     counts[name] = counts.get(name, 0) + 1
+...
+>>> print(counts)
+{'yash': 6, 'jay': 4, 'mohit': 6, 'aastik': 4, 'akash': 2}
+>>>
